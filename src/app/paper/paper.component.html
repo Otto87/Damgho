@@ -1,0 +1,8 @@
+<p>
+  paper with Id {{paperId}} is {{getPaperStatus()}} !
+</p>
+<button (click)="onPaperCreated()" [disabled]="!allowNewpaper">Add paper</button>
+<br>
+<input [(ngModel)]="btnName" >
+<p>Value: {{ btnName }}</p>
+<app-burger></app-burger>
