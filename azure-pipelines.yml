@@ -21,6 +21,7 @@ steps:
     ng build --prod
   displayName: 'npm install and build'
 
-- task: Npm@1
+- task: PublishPipelineArtifact@0
   inputs:
-    command: 'publish'
+    artifactName: 'angular'
+    targetPath: 'src/dist'
