@@ -39,7 +39,7 @@ steps:
   inputs:
     command: custom
     customCommand: ng build --prod
-    workingDir: Damgho
+    workingDir: 
 
 - task: PublishPipelineArtifact@0
   inputs:
