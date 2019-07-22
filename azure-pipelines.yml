@@ -38,7 +38,7 @@ steps:
   displayName: 'Build Angular'
   inputs:
     command: custom
-    customCommand: build --prod
+    customCommand: build_prod
     workingDir: 
 
 - task: PublishPipelineArtifact@0
