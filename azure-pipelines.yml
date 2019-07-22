@@ -38,10 +38,10 @@ steps:
   displayName: 'Build Angular'
   inputs:
     command: custom
-    customCommand: ng build --prod
+    customCommand: build --prod
     workingDir: 
 
 - task: PublishPipelineArtifact@0
   inputs:
     artifactName: 'angular'
-    targetPath: 'dist/'
+    targetPath: 'dist/myapp'
