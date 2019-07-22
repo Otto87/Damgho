@@ -32,7 +32,7 @@ steps:
   displayName: 'npm install'
   inputs:
     command: install
-    workingDir: Damgho
+    workingDir: 
 
 - task: Npm@1
   displayName: 'Build Angular'
