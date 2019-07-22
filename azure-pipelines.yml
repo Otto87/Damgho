@@ -32,14 +32,14 @@ steps:
   displayName: 'npm install'
   inputs:
     command: install
-    workingDir: src
+    workingDir: Damgho
 
 - task: Npm@1
   displayName: 'Build Angular'
   inputs:
     command: custom
-    customCommand: run build --prod
-    workingDir: src
+    customCommand: ng build --prod
+    workingDir: Damgho
 
 - task: PublishPipelineArtifact@0
   inputs:
