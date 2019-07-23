@@ -1,10 +1,30 @@
-<p>
-  <label>{{name}} - {{price}}</label>
-</p>
 <form (submit)="onSubmit()">
   <label>Burger Name:</label>
-  <input type="text" [(ngModel)]="name" name="name">
+  <input type="text" [(ngModel)]="inputName" name="inputName">
   <label>Burger Price:</label>
-  <input type="text" [(ngModel)]="price" name="price">
+  <input type="text" [(ngModel)]="inputPrice" name="inputName">
   <input type="submit">
 </form>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Burger
+      </th>
+      <th>
+        Price
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let burger of burgerList">
+      <td>
+        {{burger.name}}
+      </td>
+      <td>
+          {{burger.price}}        
+      </td>
+    </tr>
+  </tbody>
+</table>
