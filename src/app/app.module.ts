@@ -8,7 +8,7 @@ import { PenComponent } from './pen/pen.component';
 import { PaperComponent } from './paper/paper.component';
 import { BurgerComponent } from './burger/burger.component';
 import { TacosModule } from './tacos/tacos.module';
-import { TacosService } from './tacos.service';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +22,10 @@ import { TacosService } from './tacos.service';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    TacosModule
+    TacosModule,
+    HttpClientModule
   ],
-  providers: [TacosService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

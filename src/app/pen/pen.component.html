@@ -1,4 +1,13 @@
 <p>
   pen works!
 </p>
+<h1>Breweries</h1>
+<ul *ngIf="brews">
+  <li *ngFor="let brew of brews">
+    <p class="name">{{brew.name}}</p>
+    <p class="country">{{brew.country}}</p>
+    <a href="{{brew.website_url}}" class="site">web site</a>
+  </li>
+
+</ul>
 <app-paper></app-paper>

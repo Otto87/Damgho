@@ -1,0 +1,9 @@
+.active{
+background-color: blue;
+border: 4px solid black;
+}
+
+.nonactive{
+    background-color: lightblue;
+    border: 4px solid white;
+    }

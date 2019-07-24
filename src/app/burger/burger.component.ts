@@ -21,8 +21,16 @@ export class BurgerComponent implements OnInit {
     //alert(this.name);
     let bur1 = new Burger(this.inputName, this.inputPrice);
 
-    this.burgerList.push(bur1);
+    this.burgerList.push(bur1);    
     
+  }
+
+  setTableClasses(){
+    let myClasses = {
+      active: this.burgerList.length % 2 ===0,
+      nonactive: this.burgerList.length % 3 ===0
+    }
+    return myClasses;
   }
 
 }

@@ -6,7 +6,9 @@
   <input type="submit">
 </form>
 <br>
-<table>
+<!-- <table [ngStyle]="{'background-color': burgerList.length % 2 ===0 ? 'red':'yellow'}"> -->
+<!-- <table [class.active]="burgerList.length % 2 ===0"> -->
+<table [ngClass]="setTableClasses()">
   <thead>
     <tr>
       <th>

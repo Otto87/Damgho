@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { BrewsService } from '../http.service';
+import { BreweryModel } from '../Common/Brewery';
 
 @Component({
   selector: 'app-pen',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PenComponent implements OnInit {
 
-  constructor() { }
+  brews: BreweryModel[];
+  constructor(private _http: BrewsService) { }
 
-  ngOnInit() {
+  async ngOnInit() {
+    // this._http.getBeer().subscribe(data => {
+    //   this.brews = data;
+    //   console.log(this.brews);
+    // });
+
+    this.brews = await this._http.getBeerAsync();
+    console.log(this.brews);
   }
 
 }

@@ -1,3 +1,15 @@
 <p>
   tacos works!
+  <button (click)="countClick()">Click me !</button>
 </p>
+
+<div class="play-container">
+  <ng-template [ngIf]="clickCounter %2 ===0" [ngIfElse]="none">
+    <p>Clicked {{clickCounter}} times</p>
+  </ng-template>
+
+  <ng-template #none>
+    <p>Clicked {{clickCounter}} even times </p>
+  </ng-template>
+  
+</div>
