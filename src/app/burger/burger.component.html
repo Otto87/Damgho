@@ -20,10 +20,10 @@
   <tbody>
     <tr *ngFor="let burger of burgerList">
       <td>
-        {{burger.name}}
+        {{burger.name|uppercase}}
       </td>
       <td>
-          {{burger.price}}        
+        {{burger.price}}
       </td>
     </tr>
   </tbody>
