@@ -43,5 +43,5 @@ steps:
 
 - task: PublishPipelineArtifact@0
   inputs:
-    artifactName: 'wwwroot'
+    artifactName: 'drop/wwwroot'
     targetPath: 'dist/myapp'
