@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BrewsService } from '../http.service';
 import { BreweryModel } from '../Common/Brewery';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-pen',
@@ -10,7 +11,8 @@ import { BreweryModel } from '../Common/Brewery';
 export class PenComponent implements OnInit {
 
   brews: BreweryModel[];
-  constructor(private _http: BrewsService) { }
+  values: {};
+  constructor(private http: BrewsService, private httpClient: HttpClient) { }
 
   async ngOnInit() {
     // this._http.getBeer().subscribe(data => {
@@ -18,8 +20,10 @@ export class PenComponent implements OnInit {
     //   console.log(this.brews);
     // });
 
-    this.brews = await this._http.getBeerAsync();
-    console.log(this.brews);
+    this.brews = await this.http.getBeerAsync();
+    this.values = await this.http.getValuesAsync();
+    this.httpClient.get('https://localhost:5005/api/MyApi').subscribe(data => console.log(data));
+    //console.log(this.values);
   }
 
 }

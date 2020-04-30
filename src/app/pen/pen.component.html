@@ -1,6 +1,17 @@
 <p>
   pen works!
 </p>
+
+<h1>Values</h1>
+<ul *ngIf="brews">
+  <li *ngFor="let value of values">
+    <p class="name">{{value}}</p>
+  </li>
+
+</ul>
+
+
+
 <h1>Breweries</h1>
 <ul *ngIf="brews">
   <li *ngFor="let brew of brews">
