@@ -1,5 +1,6 @@
 <p>
   tacos works!
+
   <button (click)="countClick()">Click me !</button>
 </p>
 
@@ -13,3 +14,7 @@
   </ng-template>
   
 </div>
+<p>
+    <a [routerLink]="['media']" routerLinkActive="router-link-active">media from tacos</a>
+</p>
+<router-outlet></router-outlet>

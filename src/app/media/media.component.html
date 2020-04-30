@@ -1,0 +1,12 @@
+<h1>File Upload To storage using Angular 5 and ASP.NET Core 3.1</h1>
+<input [(ngModel)]="media" />
+<br/>
+<input #file type="file" multiple (change)="upload(file.files)" />
+<br/>
+<span style="font-weight:bold;color:green;" *ngIf="progress > 0 && progress < 100">
+  {{progress}}%
+</span>
+
+<span style="font-weight:bold;color:green;" *ngIf="message">
+  {{message}}
+</span>

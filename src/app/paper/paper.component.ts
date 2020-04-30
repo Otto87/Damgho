@@ -7,26 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaperComponent implements OnInit {
 
-  btnName:string= "haha";
-  paperId:number = 10;
-  paperStatus:string = 'available';
+  btnName = 'haha';
+  paperId = 10;
+  paperStatus = 'available';
   allowNewpaper = false;
-  constructor() { 
+  constructor() {
     setTimeout(() => {
-      this.allowNewpaper=true;
-      this.btnName = "abzzaaaaaaa";
+      this.allowNewpaper = true;
+      this.btnName = 'abzzaaaaaaa';
     }, 3000);
   }
 
   ngOnInit() {
   }
 
-  getPaperStatus(){
+  getPaperStatus() {
     return this.paperStatus;
   }
 
-  onPaperCreated(){
-this.paperStatus = "Paper was created";
+  onPaperCreated() {
+    this.paperStatus = 'Paper was created';
   }
 
 }

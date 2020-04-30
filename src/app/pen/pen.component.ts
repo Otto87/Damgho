@@ -21,9 +21,8 @@ export class PenComponent implements OnInit {
     // });
 
     this.brews = await this.http.getBeerAsync();
-    this.values = await this.http.getValuesAsync();
-    this.httpClient.get('https://localhost:5005/api/MyApi').subscribe(data => console.log(data));
-    //console.log(this.values);
+    // this.values = await this.http.getValuesAsync();
+    // this.httpClient.get('https://localhost:5005/api/MyApi').subscribe(data => console.log(data));
   }
 
 }

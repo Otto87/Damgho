@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TacosComponent implements OnInit {
 
-  clickCounter: number = 0
+  clickCounter = 0;
   constructor() { }
 
   ngOnInit() {
   }
 
   countClick() {
-    this.clickCounter++
+    this.clickCounter++;
   }
 
 }

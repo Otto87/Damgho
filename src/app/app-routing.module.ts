@@ -5,6 +5,7 @@ import { BurgerComponent } from './burger/burger.component';
 import { TacosComponent } from './tacos/tacos.component';
 import { PaperComponent } from './paper/paper.component';
 import { PenComponent } from './pen/pen.component';
+import { MediaComponent } from './media/media.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,8 @@ const routes: Routes = [
   { path: 'tacos', component: TacosComponent },
   { path: 'paper', component: PaperComponent },
   { path: 'pen', component: PenComponent },
+  { path: 'media', component: MediaComponent },
+  { path: 'tacos/media', component: MediaComponent },
 ];
 
 @NgModule({

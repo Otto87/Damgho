@@ -9,6 +9,7 @@ import { PaperComponent } from './paper/paper.component';
 import { BurgerComponent } from './burger/burger.component';
 import { TacosModule } from './tacos/tacos.module';
 import { HttpClientModule} from '@angular/common/http';
+import { MediaComponent } from './media/media.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule} from '@angular/common/http';
     BookComponent,
     PenComponent,
     PaperComponent,
-    BurgerComponent
+    BurgerComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
