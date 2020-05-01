@@ -39,6 +39,36 @@ const routes: Routes = [
     loadChildren: () => import('./modules/general/signin/signin.module')
       .then(mod => mod.SigninModule)
   },
+  {
+    path: 'httpclient',
+    loadChildren: () => import('./modules/application/items/items.module')
+      .then(mod => mod.ItemsModule)
+  },
+  {
+    path: 'template-driven-forms',
+    loadChildren: () => import('./modules/application/example-template-driven-forms/example-template-driven-forms.module')
+      .then(mod => mod.ExampleTemplateDrivenFormsModule)
+  },
+  {
+    path: 'components',
+    loadChildren: () => import('./modules/application/example-components/example-components.module')
+      .then(mod => mod.ExampleComponentsModule)
+  },
+  {
+    path: 'services',
+    loadChildren: () => import('./modules/application/example-services/example-services.module')
+      .then(mod => mod.ExampleServicesModule)
+  },
+  {
+    path: 'reactive-form',
+    loadChildren: () => import('./modules/application/example-reactive-form/example-reactive-form.module')
+      .then(mod => mod.ExampleReactiveFormModule)
+  },
+  {
+    path: 'bootstrap-prototype',
+    loadChildren: () => import('./modules/application/example-bootstrap-prototype/example-bootstrap-prototype.module')
+      .then(mod => mod.ExampleBootstrapPrototypeModule)
+  },
   { path: '**', component: NotFoundComponent }
 ];
 
