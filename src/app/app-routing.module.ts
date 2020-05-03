@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BookComponent } from './book/book.component';
-import { BurgerComponent } from './burger/burger.component';
-import { TacosComponent } from './tacos/tacos.component';
-import { PaperComponent } from './paper/paper.component';
-import { PenComponent } from './pen/pen.component';
-import { MediaComponent } from './media/media.component';
+import { BookComponent } from './modules/application/book/book.component';
+import { BurgerComponent } from './modules/application/burger/burger.component';
+import { TacosComponent } from './modules/application/tacos/tacos.component';
+import { PaperComponent } from './modules/application/paper/paper.component';
+import { PenComponent } from './modules/application/pen/pen.component';
+import { MediaComponent } from './modules/application/media/media.component';
 import { HomeComponent } from './modules/general/home/home.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
 

@@ -57,6 +57,12 @@ export class HomeComponent implements OnInit {
           icon: 'fab fa-bootstrap',
           link: 'httpclient'
         },
+        {
+          name: 'media', description: 'Media files from Azure blob storage', icon: 'fas fa-photo-video', link: 'media'
+        },
+        {
+          name: 'burger', description: 'Media files from Azure blob storage', icon: 'fas fa-hamburger', link: 'burger'
+        }
       ];
 
   }

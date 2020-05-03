@@ -25,7 +25,7 @@ export class MediaComponent implements OnInit {
     const formData = new FormData();
 
     for (const file of files) {
-      formData.append('blob', file);
+      formData.append('blobs', file);
     }
 
     const url = 'https://localhost:44396/api/Media/' + this.media + '/upload';

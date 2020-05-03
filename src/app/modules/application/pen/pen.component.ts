@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { BrewsService } from '../http.service';
-import { BreweryModel } from '../Common/Brewery';
+import { BrewsService } from '../../../http.service';
+import { BreweryModel } from '../../../Common/Brewery';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
